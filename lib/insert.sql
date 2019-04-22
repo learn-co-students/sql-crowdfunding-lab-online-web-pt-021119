@@ -1,67 +1,48 @@
--- 20 USERS
-INSERT INTO users (name, age) VALUES ("Jon Snow", "29");
-INSERT INTO users (name, age) VALUES ("Tyrion Lannister", "37");
-INSERT INTO users (name, age) VALUES ("Jaime Lannister", "41");
-INSERT INTO users (name, age) VALUES ("Cersei Lannister", "44");
-INSERT INTO users (name, age) VALUES ("Daenerys Targaryen", "29");
-INSERT INTO users (name, age) VALUES ("Sansa Stark", "27");
-INSERT INTO users (name, age) VALUES ("Arya Stark", "15");
-INSERT INTO users (name, age) VALUES ("Davos Seaworth", "49");
-INSERT INTO users (name, age) VALUES ("Missandei", "24");
-INSERT INTO users (name, age) VALUES ("Theon Greyjoy", "31");
-INSERT INTO users (name, age) VALUES ("Samwell Tarly", "30");
-INSERT INTO users (name, age) VALUES ("Bran Stark", "17");
-INSERT INTO users (name, age) VALUES ("Brienne of Tarth", "38");
-INSERT INTO users (name, age) VALUES ("Varys", "44");
-INSERT INTO users (name, age) VALUES ('Sandor "The Hound" Clegane', "41");
-INSERT INTO users (name, age) VALUES ("Bronn", "29");
-INSERT INTO users (name, age) VALUES ("Tormund Giantsbane", "29");
-INSERT INTO users (name, age) VALUES ("Gendry", "29");
-INSERT INTO users (name, age) VALUES ("Grey Worm", "29");
-INSERT INTO users (name, age) VALUES ("Jorah Mormont", "54");
+INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33),
+(5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30),
+(11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5),
+(17, 'Whale', 6), (18, 'Pacha', 5), (19, 'Ena', 24), (20, 'Katie', 24);
 
--- 10 PROJECTS
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
+(1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'),
+(2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+(3, 'The next Harry Potter', 'books', 1000.00, '2013-05-30', '2015-05-30'),
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'),
+(5, 'Voldement needs a body', 'charity', 6000.00, '2013-03-20', '2013-09-20'),
+(6, 'The next Inna-Gadda-Davida', 'music', 200.00, '2014-12-30', '2015-12-30'),
+(7, 'Iguana needs tail operation', 'charity', 2000.00, '2013-10-02', '2013-10-30'),
+(8, 'I have bed bugs!', 'charity', 800.00, '2014-06-30', '2014-06-31'),
+(9, 'I want to teach English in China', 'charity', 3000.00, '2013-06-30', '2013-09-30'),
+(10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
 
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back the North", "Kingdom", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back the North", "Kingdom", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back King's Landing", "Kingdom", 1320000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back Braavos", "Kingdom", 750000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back Volantis", "Kingdom", 560000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take back the Iron Islands", "Kingdom", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Support Blackwatch Recruitment", "Support", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Dragon Incubation Program", "Conquest", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Fund the Faceless Men", "Philanthropic", 1000000000, "2019-04-01", "2022-12-30");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Take the Iron Throne", "Kingdom", 10000000000, "2019-04-01", "2022-12-30");
-
--- 30 PLEDGES
-
-INSERT INTO pledges (amount, project_id, user_id) VALUES (100000,1,1);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (200000,2,2);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (300000,3,3);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (400000,4,4);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (500000,5,5);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (600000,6,6);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (700000,7,7);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (800000,8,8);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (900000,9,9);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1000000,10,10);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1100000,1,11);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1200000,2,12);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1300000,3,13);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1400000,4,14);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1500000,5,15);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1600000,6,16);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1700000,7,17);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1800000,8,18);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (1900000,9,19);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2000000,10,20);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2100000,1,1);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2200000,2,2);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2300000,3,3);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2400000,4,4);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2500000,5,5);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2600000,6,6);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2700000,7,7);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2800000,8,8);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (2900000,9,9);
-INSERT INTO pledges (amount, project_id, user_id) VALUES (3000000,10,10);
+INSERT INTO pledges (id, amount, user_id, project_id) VALUES
+(1, 10.00, 1, 2),
+(2, 20.00, 1, 3),
+(3, 40.00, 1, 4),
+(4, 50.00, 2, 3),
+(5, 10.00, 3, 2),
+(6, 20.00, 4, 4),
+(7, 40.00, 5, 10),
+(8, 60.00, 6, 10),
+(9, 50.00, 7, 9),
+(10, 700.00, 8, 8),
+(11, 1000.00, 8, 7),
+(12, 40.00, 9, 6),
+(13, 50.00, 9, 3),
+(14, 50.00, 10, 4),
+(15, 24.00, 12, 1),
+(16, 34.00, 11, 1),
+(17, 12.00, 13, 6),
+(18, 19.00, 14, 5),
+(19, 20.00, 15, 5),
+(20, 40.00, 16, 6),
+(21, 35.50, 17, 7),
+(22, 40.00, 18, 8),
+(23, 60.00, 19, 9),
+(24, 70.00, 20, 10),
+(25, 100.00, 20, 4),
+(26, 40.00, 19, 1),
+(27, 20.00, 18, 6),
+(28, 90.00, 17, 9),
+(29, 230.00, 16, 6),
+(30, 450.00, 15, 5);
